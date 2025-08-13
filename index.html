@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            width: 220px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 16px rgba(0,0,0,0.3);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .card p {
+            color: gray;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card" onclick="location.href='bmi.html'">
+            <h3>BMI Calculator</h3>
+            <p>Calculate your Body Mass Index quickly.</p>
+        </div>
+
+        <div class="card" onclick="location.href='currency.html'">
+            <h3>Currency Converter</h3>
+            <p>Convert between USD, INR, EUR, GBP, and JPY.</p>
+        </div>
+    </div>
+
+</body>
+</html>
