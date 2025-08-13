@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="bmi.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="top">
+          <h3>Body mass index (BMI)</h3>
+          <h5>A measure of body fat in adults</h5>
+        </div>
+        <div class="mid">
+          <div class="form">
+            <label for="weight">Weight</label>
+            <div class="input-group">
+              <input
+                type="number"
+                id="weight"
+                placeholder="85"
+                oninput="BMI()"
+              />
+              <span>kg</span>
+            </div>
+
+            <label for="height">Height</label>
+            <div class="input-group">
+              <input
+                type="number"
+                id="height"
+                placeholder="180"
+                oninput="BMI()"
+              />
+              <span>cm</span>
+            </div>
+          </div>
+
+          <div class="result-box">
+            <h1 id="result">0.0</h1>
+            <p id="status"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="bmi.js"></script>
+  </body>
+</html>
